@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--web-background);
+}
+
+:root {
+    --web-background: #ffffff;
+    --moblie-background: #fafafa;
+    --time-icon-source: #bdbdbd;
+    --section-h1: #333333;
+    --icon-span: #f2994a;
+    --icon-span-second: #4f4f4f;
+    --section-h2: #000000;
+    --footer-p: #828282;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.8rem;
+}
+
+// title section
+.title h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--section-h2);
+    margin-bottom: 0.75rem;
+}
+.intro {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 0.9375rem;
+    color: var(--icon-span-second);
+    margin-bottom: 0.75rem;
+}
+.intro .material-icons {
+    font-size: 0.875rem;
+    color: #c4c4c4;
+    rotate: -90deg;
+    margin-right: 0.3rem;
+    padding: 0;
+}
+.title img {
+    width: 94%;
+    margin-bottom: 1.5rem;
+}
+
+// cooking-details section
+.cooking-details {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+}
+.detail-item {
+    display: flex;
+}
+.yields {
+    margin-bottom: 1.5rem;
+}
+.yields .material-icons {
+    color: var(--icon-span);
+    font-size: 0.875rem;
+    padding-right: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+.details p {
+    font-weight: 700;
+    font-size: 0.5rem;
+    line-height: 0.625rem;
+    text-transform: uppercase;
+    color: var(--time-icon-source);
+}
+.serving {
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    color: var(--icon-span);
+}
+#time {
+    display: flex;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+#time .material-icons {
+    color: var(--icon-span-second);
+    font-size: 0.875rem;
+    padding-right: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+#time .pre-time {
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    color: var(--section-h1);
+}
+
+// ingredients section
+.ingredients {
+    font-family: "Playfair Display", serif;
+    color: var(--section-h1);
+}
+.ingredients h2 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.8125rem;
+}
+.ingredients h3 {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    margin-bottom: 1rem;
+}
+.ingredients p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5625rem;
+}
+.ingredients form {
+    margin-bottom: 1.5rem;
+}
+.ingredients label {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.ingredients input {
+    margin-right: 0.5rem;
+}
+.ingredients span {
+    font-weight: 700;
+}
+
+// instructions section
+.instructions {
+    font-family: "Playfair Display", serif;
+    color: var(--section-h1);
+}
+.instructions h2 {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.8125rem;
+}
+.contents {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+}
+.number {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: var(--icon-span);
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 0 0.8rem 0.5rem 0.8rem;
+    height: min-content;
+    margin-right: 1rem;
+}
+.content {
+    font-weight: 700;
+}
+
+.source {
+    font-style: italic;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    color: var(--time-icon-source);
+    margin: 0 0.75rem 2rem 0.75rem;
+}
+
+// footer
+footer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    text-align: center;
+    color: var(--footer-p);
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 0 14.6875rem;
+        width: 100%;
+        height: auto;
+    }
+    .layout {
+        display: inline;
+        margin: 3.25rem 0;
+    }
+    // title section
+    .title {
+        margin-top: 3.25rem;
+    }
+    .title h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .intro {
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+        width: 65%;
+    }
+    .intro .material-icons {
+        font-size: 0.8125rem;
+    }
+    .title img {
+        margin-top: 1.5rem;
+        width: 90%;
+    }
+
+    // cooking-details section
+    .cooking-details {
+        float: right;
+        width: 216px;
+        height: 367px;
+        background: #ffffff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        margin-right: 6rem;
+    }
+    .yields {
+        padding: 1rem;
+        justify-content: center;
+        margin: 2.5rem 0 0 0;
+    }
+    .yields .material-icons {
+        font-size: 1.6875rem;
+    }
+    .details p {
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+    }
+    .serving {
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+    }
+    #time {
+        flex-wrap: wrap;
+        padding: 0 1rem 1rem 1rem;
+    }
+    #time .detail-item {
+        margin: 1.5rem;
+    }
+
+    #time .material-icons {
+        font-size: 1.6875rem;
+    }
+    #time .pre-time {
+        font-size: 0.875rem;
+        line-height: 1.0625rem;
+    }
+
+    // ingredients section
+    .ingredients {
+        width: 55%;
+    }
+    .ingredients h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .ingredients h3 {
+        font-size: 1rem;
+        line-height: 1.3125rem;
+        margin-bottom: 1.5rem;
+    }
+    .ingredients div {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+    }
+
+    .ingredients p {
+        font-size: 1rem;
+        line-height: 1.375rem;
+    }
+
+    .ingredients input {
+        font-size: 1rem;
+        line-height: 1.375rem;
+    }
+    // instructions section
+    .instructions {
+        width: 55%;
+    }
+    .instructions h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .source {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
