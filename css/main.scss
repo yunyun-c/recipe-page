@@ -133,10 +133,11 @@ body {
 .ingredients form {
     margin-bottom: 1.5rem;
 }
-.ingredients label {
+.ingredients div {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
+    margin-bottom: 0.8rem;
 }
 .ingredients input {
     margin-right: 0.5rem;
@@ -197,6 +198,7 @@ footer {
     line-height: 1.0625rem;
     text-align: center;
     color: var(--footer-p);
+    margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1440px) {

@@ -165,7 +165,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.ingredients label {
+.ingredients div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,6 +175,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 0.8rem;
 }
 
 .ingredients input {
@@ -247,6 +248,7 @@ footer {
   line-height: 1.0625rem;
   text-align: center;
   color: var(--footer-p);
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 1440px) {
